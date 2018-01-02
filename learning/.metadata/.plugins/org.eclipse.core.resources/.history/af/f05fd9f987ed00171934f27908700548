@@ -1,0 +1,9 @@
+package com.ikea.test;
+
+public class Main {
+	
+ public static void main(String ordp[]) {
+	 
+ }
+ 
+}

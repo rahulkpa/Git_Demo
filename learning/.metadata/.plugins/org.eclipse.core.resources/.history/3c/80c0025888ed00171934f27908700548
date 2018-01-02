@@ -1,0 +1,12 @@
+package com.ikea.test;
+
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class Main {
+	
+ public static void main(String ordp[]) {
+	 Resource r = new ClassPathResource("Spring-dispatcher.xml");
+ }
+ 
+}

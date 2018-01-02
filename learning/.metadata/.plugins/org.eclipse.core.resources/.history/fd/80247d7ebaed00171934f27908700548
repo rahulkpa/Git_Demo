@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean class="com.ikea.test.Car" id="c">
+		<property name="engine" ref="e">
+		</property>
+	</bean>
+	<bean class="com.ikea.test.Engine" id="e">
+		<property name="modelYear" value="2017">
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,16 @@
+package com.ikea.test;
+
+public class Test {
+	
+	Test(String name){
+		System.out.println("This is argumented constructor...."+name);
+	}
+	Test(int age){
+		System.out.println("This is argumented constructor...."+age);
+	}
+	
+	public void help(String name) {
+		System.out.println("Hello"+name+"!");
+	}
+	
+}
