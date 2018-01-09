@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean class="com.ikea.test.Car" id="c">
+		<property name="engine">
+			<list>
+				<ref bean="e1"></ref>
+				<ref bean="e2"></ref>
+				<ref bean="e3"></ref>
+				<ref bean="e4"></ref>
+			</list>
+		</property>
+		<property name="carName">
+			<list>
+				<value>Honda City</value>
+				<value>BMW</value>
+				<value>Mercedes</value>
+				<value>Skoda</value>
+			</list>
+		</property>
+	</bean>
+	<bean class="com.ikea.test.Engine" id="e1">
+		<property name="modelYear" value="2017">
+		</property>
+	</bean>
+	<bean class="com.ikea.test.Engine" id="e2">
+		<property name="modelYear" value="2007">
+		</property>
+	</bean>
+	<bean class="com.ikea.test.Engine" id="e3">
+		<property name="modelYear" value="1987">
+		</property>
+	</bean>
+	<bean class="com.ikea.test.Engine" id="e4">
+		<property name="modelYear" value="2018">
+		</property>
+	</bean>
+	
+</beans>

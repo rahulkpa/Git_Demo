@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean
+		class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
+	<bean id="c" class="com.ikea.test.Car">
+	<property name="car" value="Honda City"/>
+	<property name="engine" ref="e"/>
+	</bean>
+	<bean id="e" class="com.ikea.test.Engine">
+	<property name="modelYear" value="2002"/>
+	</bean>
+</beans>
