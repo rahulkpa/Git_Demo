@@ -1,0 +1,11 @@
+package com.ikea.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class B {
+	
+ B(){
+	 System.out.println("*******B Class****");
+ }
+}

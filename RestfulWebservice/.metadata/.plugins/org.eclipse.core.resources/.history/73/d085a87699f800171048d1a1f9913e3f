@@ -1,0 +1,5 @@
+package org.ikea.maven.restful.messenger.database;
+
+public class DatabaseClass {
+
+}

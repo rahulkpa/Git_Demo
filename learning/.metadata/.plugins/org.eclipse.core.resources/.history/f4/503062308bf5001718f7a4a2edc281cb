@@ -1,0 +1,24 @@
+package com.ikea.Test;
+
+public class Car {
+	//if in bean element, autowire = "constructor" then only default constructor should be defined then only object will be created
+	private Engine engine;
+	
+	Car(Engine e){
+		this.engine = e;
+	}
+
+	public Engine getEngine() {
+		return engine;
+	}
+
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+	
+	
+	public void printData(){
+		System.out.println("model year: "+engine.getModelYears());
+	}
+
+}

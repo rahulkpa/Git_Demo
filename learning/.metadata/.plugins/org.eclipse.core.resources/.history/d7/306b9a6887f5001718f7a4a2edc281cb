@@ -1,0 +1,20 @@
+package com.ikea.Test;
+
+public class Engine {
+	
+	private String modelYears;
+	
+	Engine(){
+		System.out.println("***********Constructor********");
+	}
+	
+	public String getModelYears() {
+		return modelYears;
+	}
+
+	public void setModelYears(String modelYears) {
+		this.modelYears = modelYears;
+	}
+	
+
+}

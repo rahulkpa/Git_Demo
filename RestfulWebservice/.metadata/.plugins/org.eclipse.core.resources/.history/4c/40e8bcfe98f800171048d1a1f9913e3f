@@ -1,0 +1,25 @@
+package org.ikea.maven.restful.messenger.model;
+
+import java.util.Date;
+
+public class Profile {
+	
+	private long id;
+	private String profileName;
+	private String firstName;
+	private String lastName;
+	private Date created;
+	
+	public Profile() {
+		
+	}
+	
+	Profile(long id, String profileName, String firstName, String lastName, Date created){
+		this.id = id;
+		this.profileName = profileName;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.created = created;
+	}
+
+}

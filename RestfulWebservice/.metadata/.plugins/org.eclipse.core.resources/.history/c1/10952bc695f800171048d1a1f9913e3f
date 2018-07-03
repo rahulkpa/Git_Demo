@@ -1,0 +1,22 @@
+package org.ikea.maven.restful.messenger.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.ikea.maven.restful.messenger.model.Message;
+
+public class MessageService {
+	
+	public List<Message> getAllMessages(){
+		
+		Message m1 =  new Message(1L, "Raghupati Raghav Raja Ram ", "Rahul Kuamr Pandey");
+		Message m2 =  new Message(2L, "Shyam teri bansi ", "Suraj Kuamr Pandey");
+		Message m3 =  new Message(3L, "Magal bhavan ye mangal hari ", "Rakesh Tiwari");
+		List <Message> list = new ArrayList<Message>();
+	    list.add(m1);
+		list.add(m2);
+		list.add(m3);
+		return list;
+	}
+
+}

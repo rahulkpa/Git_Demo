@@ -1,0 +1,5 @@
+package org.ikea.maven.restful.messenger.resource;
+
+public class MessageResource {
+
+}

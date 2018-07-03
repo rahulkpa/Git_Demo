@@ -1,0 +1,17 @@
+package org.ikea.maven.restful.messenger.service;
+
+import java.util.ArrayList;
+import java.util.Map;
+
+import org.ikea.maven.restful.messenger.database.DatabaseClass;
+import org.ikea.maven.restful.messenger.model.Profile;
+
+public class ProfileService {
+	
+	private Map<String, Profile> profiles = DatabaseClass.getProfiles();
+    public List<Profile> getAllProfile(){
+    	return new ArrayList<Profile>(profiles.values());
+    }
+	
+	
+}

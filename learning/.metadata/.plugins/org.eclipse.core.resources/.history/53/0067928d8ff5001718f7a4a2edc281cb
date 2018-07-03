@@ -1,0 +1,13 @@
+package com.ikea.Test;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Car {
+	@Autowired
+	private Engine engine;
+
+	public void printData(){
+		System.out.println("model year: "+engine.getModelYears());
+	}
+
+}

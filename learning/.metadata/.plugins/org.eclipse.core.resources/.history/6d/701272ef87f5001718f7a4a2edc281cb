@@ -1,0 +1,22 @@
+package com.ikea.Test;
+
+public class Engine {
+	
+	//if in bean element, autowire = "constructor" then only constructor should be defined then only object will be created
+	private String modelYears;
+	
+	Engine(String modelYears){
+		this.modelYears = modelYears;
+		System.out.println("***********Constructor********");
+	}
+	
+	public String getModelYears() {
+		return modelYears;
+	}
+
+	/*public void setModelYears(String modelYears) {
+		this.modelYears = modelYears;
+	}*/
+	
+
+}
